@@ -5,13 +5,13 @@ import React from "react";
 const Logo = () => {
   return (
     <div>
-      <Link href={"/"} className="flex items-center ">
+      <Link href={"/"} className="flex items-center gap-1">
         <Image
-        className="border border-red-300"
+          className=""
           alt="care haven"
           src={"/assets/logo.png"}
-          width={70}
-          height={40}
+          width={50}
+          height={80}
         />
         <h2 className="font-bold text-xl">
           Care
