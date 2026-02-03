@@ -11,6 +11,9 @@ const Navbar = () => {
         <NavLink href={'/'}>Home</NavLink>
       </li>
       <li>
+        <NavLink href={'/services'}>Services</NavLink>
+      </li>
+      {/* <li>
         <NavLink href={'/baby-care'}>Baby Care </NavLink>
       </li>
       <li>
@@ -18,7 +21,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink href={'/sick-people-service'}>Sick People Service</NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink href={'/about'}>About</NavLink>
       </li>

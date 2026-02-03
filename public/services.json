@@ -1,0 +1,41 @@
+[
+  {
+    "id": "svc-001",
+    "title": "Baby Sitting Service",
+    "category": "baby-care",
+    "shortDescription": "Trusted care for your baby at home.",
+    "priceFrom": 300,
+    "priceUnit": "hour",
+    "rating": 4.5,
+    "totalReviews": 120,
+    "icon": "baby",
+    "image": "/images/services/baby-care.png",
+    "isFeatured": true
+  },
+  {
+    "id": "svc-002",
+    "title": "Elderly Care Service",
+    "category": "elderly-care",
+    "shortDescription": "Compassionate and respectful elderly care.",
+    "priceFrom": 350,
+    "priceUnit": "hour",
+    "rating": 4.7,
+    "totalReviews": 98,
+    "icon": "elderly",
+    "image": "/images/services/elderly-care.png",
+    "isFeatured": false
+  },
+  {
+    "id": "svc-003",
+    "title": "Sick Patient Care",
+    "category": "sick-care",
+    "shortDescription": "Professional care for patients at home.",
+    "priceFrom": 400,
+    "priceUnit": "hour",
+    "rating": 4.6,
+    "totalReviews": 76,
+    "icon": "medical",
+    "image": "/images/services/sick-care.png",
+    "isFeatured": false
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "id": "svc-001",
+    "slug": "baby-sitting-service",
+    "title": "Baby Sitting Service",
+    "tagline": "Professional and trusted baby sitters at your home.",
+    "category": "baby-care",
+
+    "media": {
+      "thumbnail": "https://i.ibb.co.com/sdy0JXQd/baby.jpg",
+      "banner": "/images/services/baby-care-banner.png",
+      "gallery": [
+        "/images/services/baby-1.png",
+        "/images/services/baby-2.png"
+      ]
+    },
+
+    "rating": {
+      "average": 4.5,
+      "totalReviews": 120
+    },
+
+    "pricing": {
+      "currency": "BDT",
+      "packages": [
+        { "type": "Per Hour", "price": 300 },
+        { "type": "Daily", "price": 2400 },
+        { "type": "Monthly", "price": 45000 }
+      ]
+    },
+
+    "description": "Our baby sitting service ensures your child receives safe, loving, and professional care at home.",
+
+    "whatsIncluded": [
+      "Feeding & hygiene care",
+      "Basic health monitoring",
+      "Play and safety supervision",
+      "Nap time assistance"
+    ],
+
+    "availableSchedule": {
+      "timeTypes": ["Hourly", "Daily", "Weekly", "Monthly"],
+      "support": "24/7"
+    },
+
+    "caregiver": {
+      "type": "Professional Babysitter",
+      "trained": true,
+      "verified": true,
+      "backgroundChecked": true,
+      "experience": "2+ years"
+    },
+
+    "serviceArea": {
+      "city": "Dhaka",
+      "coverage": "Home-based service"
+    },
+
+    "trustAndSafety": {
+      "badges": [
+        "Verified Caregivers",
+        "Background Checked",
+        "Child Safety Training",
+        "Secure Booking"
+      ],
+      "insuranceCovered": true
+    },
+
+    "booking": {
+      "ctaText": "Book Service Now",
+      "loginRequired": true,
+      "redirect": {
+        "loggedIn": "/booking/svc-001",
+        "notLoggedIn": "/login"
+      }
+    },
+
+    "status": {
+      "isActive": true,
+      "isFeatured": true
+    }
+  },
+
+  {
+    "id": "svc-002",
+    "slug": "elderly-care-service",
+    "title": "Elderly Care Service",
+    "tagline": "Compassionate and respectful care for elders.",
+    "category": "elderly-care",
+
+    "media": {
+      "thumbnail": "https://i.ibb.co.com/m5M30VXr/elderly.jpg",
+      "banner": "/images/services/elderly-care-banner.png",
+      "gallery": []
+    },
+
+    "rating": {
+      "average": 4.7,
+      "totalReviews": 98
+    },
+
+    "pricing": {
+      "currency": "BDT",
+      "packages": [
+        { "type": "Per Hour", "price": 350 },
+        { "type": "Daily", "price": 2800 },
+        { "type": "Monthly", "price": 50000 }
+      ]
+    },
+
+    "description": "Dedicated elderly care service focused on comfort, dignity, and daily assistance.",
+
+    "whatsIncluded": [
+      "Daily assistance & companionship",
+      "Medication reminders",
+      "Mobility support",
+      "Basic health monitoring"
+    ],
+
+    "availableSchedule": {
+      "timeTypes": ["Hourly", "Daily", "Monthly"],
+      "support": "24/7"
+    },
+
+    "caregiver": {
+      "type": "Elder Care Specialist",
+      "trained": true,
+      "verified": true,
+      "backgroundChecked": true,
+      "experience": "3+ years"
+    },
+
+    "serviceArea": {
+      "city": "Dhaka",
+      "coverage": "In-home elderly support"
+    },
+
+    "trustAndSafety": {
+      "badges": [
+        "Elder Care Training",
+        "Verified Caregivers",
+        "Background Checked"
+      ],
+      "insuranceCovered": true
+    },
+
+    "booking": {
+      "ctaText": "Book Elderly Care",
+      "loginRequired": true,
+      "redirect": {
+        "loggedIn": "/booking/svc-002",
+        "notLoggedIn": "/login"
+      }
+    },
+
+    "status": {
+      "isActive": true,
+      "isFeatured": false
+    }
+  },
+
+  {
+    "id": "svc-003",
+    "slug": "sick-patient-care",
+    "title": "Sick Patient Care",
+    "tagline": "Professional medical and non-medical care at home.",
+    "category": "sick-care",
+
+    "media": {
+      "thumbnail": "https://i.ibb.co.com/tpY0f0m4/sick.jpg",
+      "banner": "/images/services/sick-care-banner.png",
+      "gallery": []
+    },
+
+    "rating": {
+      "average": 4.6,
+      "totalReviews": 76
+    },
+
+    "pricing": {
+      "currency": "BDT",
+      "packages": [
+        { "type": "Per Hour", "price": 400 },
+        { "type": "Daily", "price": 3200 },
+        { "type": "Monthly", "price": 60000 }
+      ]
+    },
+
+    "description": "Home-based patient care with trained staff and hospital-level support.",
+
+    "whatsIncluded": [
+      "Patient hygiene & feeding",
+      "Vital signs monitoring",
+      "Post-surgery care",
+      "Doctor instruction follow-up"
+    ],
+
+    "availableSchedule": {
+      "timeTypes": ["Hourly", "Daily", "Monthly"],
+      "support": "24/7 Emergency"
+    },
+
+    "caregiver": {
+      "type": "Medical Care Staff",
+      "trained": true,
+      "verified": true,
+      "backgroundChecked": true,
+      "experience": "Medical trained"
+    },
+
+    "serviceArea": {
+      "city": "Dhaka",
+      "coverage": "Home nursing service"
+    },
+
+    "trustAndSafety": {
+      "badges": [
+        "Medical Trained Staff",
+        "Hospital-grade Care",
+        "Background Checked"
+      ],
+      "insuranceCovered": true
+    },
+
+    "booking": {
+      "ctaText": "Book Patient Care",
+      "loginRequired": true,
+      "redirect": {
+        "loggedIn": "/booking/svc-003",
+        "notLoggedIn": "/login"
+      }
+    },
+
+    "status": {
+      "isActive": true,
+      "isFeatured": false
+    }
+  }
+]

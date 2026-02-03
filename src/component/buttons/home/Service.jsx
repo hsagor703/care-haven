@@ -34,13 +34,13 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-24 my-10 bg-linear-to-br from-emerald-50 via-green-50 to-lime-50">
+    <section className="py-24 my-10 bg-linear-to-br from-[#050505] via-[#0b1220] to-black">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* SECTION HEADER */}
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold text-emerald-700">
-            Our Care Services
+          <h2 className="text-4xl font-bold">
+            Our <span className="linear-text"> Care Haven</span> Services
           </h2>
           <p className="mt-4 text-slate-600 text-lg">
             Professional and trusted care services designed for your family’s needs.
@@ -53,7 +53,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="card bg-white shadow-xl hover:-translate-y-2 transition-all duration-300"
+              className="card bg-linear-to-br from-emerald-50/10 to-green-50/5 shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
               <div className="card-body items-center text-center">
 

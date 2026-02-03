@@ -1,4 +1,4 @@
-import HeroSection from "@/component/buttons/home/HeroSection";
+import HeroBanner from "@/component/buttons/home/HeroBanner";
 import HowItWorks from "@/component/buttons/home/HowItWorks";
 import ServicesSection from "@/component/buttons/home/Service";
 import TestimonialsSection from "@/component/buttons/home/TestimonialsSection";
@@ -7,7 +7,7 @@ import React from "react";
 
 const Home = () => {
   return <div className="">
-    <HeroSection/>
+    <HeroBanner/>
     <HowItWorks/>
     <WhyChooseUs/>
     <ServicesSection/>

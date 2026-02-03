@@ -13,9 +13,8 @@ const Logo = () => {
           width={50}
           height={80}
         />
-        <h2 className="font-bold text-xl">
-          Care
-          <span className="text-[#1BFD9C]"> Haven</span>
+        <h2 className="font-bold text-xl linear-text">
+          Care Haven
         </h2>
       </Link>
     </div>

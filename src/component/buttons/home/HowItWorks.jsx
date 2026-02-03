@@ -23,13 +23,13 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 my-10 bg-linear-to-br from-emerald-50 via-green-50 to-lime-50">
+    <section className="py-24 my-10 bg-linear-to-br from-[#050505] via-[#0b1220] to-black">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold text-emerald-700">
-            How Care Haven Works
+          <h2 className="text-4xl font-bold ">
+            How <span className="linear-text">Care Haven</span> Works
           </h2>
           <p className="mt-4 text-lg text-slate-600">
             Get reliable care in just three simple steps.
@@ -42,7 +42,7 @@ const HowItWorks = () => {
           {steps.map((item, index) => (
             <div
               key={index}
-              className="card bg-linear-to-br from-emerald-50 to-green-50 shadow-xl"
+              className="card bg-linear-to-br from-emerald-50/10 to-green-50/5 shadow-xl"
             >
               <div className="card-body text-center">
 
@@ -52,12 +52,12 @@ const HowItWorks = () => {
                 </span>
 
                 {/* ICON */}
-                <div className="w-16 h-16 mx-auto -mt-6 rounded-full bg-emerald-600 flex items-center justify-center text-white text-2xl shadow-lg">
+                <div className="w-16 h-16 mx-auto -mt-6 rounded-full bg-green-500 flex items-center justify-center text-white text-2xl shadow-lg">
                   {item.icon}
                 </div>
 
                 {/* TITLE */}
-                <h3 className="card-title justify-center text-emerald-700 mt-4">
+                <h3 className="card-title justify-center text-green-600 mt-4">
                   {item.title}
                 </h3>
 
@@ -74,7 +74,7 @@ const HowItWorks = () => {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <button className="btn btn-success btn-lg text-white">
+          <button className="btn bg-green-500 btn-lg text-white">
             Get Started
           </button>
         </div>
