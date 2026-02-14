@@ -8,10 +8,10 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink href={'/'}>Home</NavLink>
+        <NavLink href={"/"}>Home</NavLink>
       </li>
       <li>
-        <NavLink href={'/services'}>Services</NavLink>
+        <NavLink href={"/services"}>Services</NavLink>
       </li>
       {/* <li>
         <NavLink href={'/baby-care'}>Baby Care </NavLink>
@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavLink href={'/sick-people-service'}>Sick People Service</NavLink>
       </li> */}
       <li>
-        <NavLink href={'/about'}>About</NavLink>
+        <NavLink href={"/about"}>About</NavLink>
       </li>
     </>
   );
@@ -62,8 +62,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end space-x-1.5">
-          <Button>{"Login"}</Button>
-          <Button>{"Register"}</Button>
+          <Link href={"/login"}>
+            <Button>{"Login"}</Button>
+          </Link>
+          <Link href={"/register"}>
+            <Button>{"Register"}</Button>
+          </Link>
         </div>
       </div>
     </div>
