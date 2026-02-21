@@ -9,7 +9,7 @@
     "rating": 4.5,
     "totalReviews": 120,
     "icon": "baby",
-    "image": "/images/services/baby-care.png",
+    "image": "https://ibb.co.com/gFSWTFjf",
     "isFeatured": true
   },
   {
@@ -22,7 +22,7 @@
     "rating": 4.7,
     "totalReviews": 98,
     "icon": "elderly",
-    "image": "/images/services/elderly-care.png",
+    "image": "https://ibb.co.com/KxkBdYqk",
     "isFeatured": false
   },
   {
@@ -35,7 +35,7 @@
     "rating": 4.6,
     "totalReviews": 76,
     "icon": "medical",
-    "image": "/images/services/sick-care.png",
+    "image": "https://ibb.co.com/HRh2cG6",
     "isFeatured": false
   }
 ]

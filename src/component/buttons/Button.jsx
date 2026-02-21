@@ -37,10 +37,10 @@ const StyledWrapper = styled.div`
     content: "";
     position: absolute;
     left: -4em;
-    width: 4em;
+    width: 100%;
     height: 100%;
     top: 0;
-    transition: transform .4s ease-in-out;
+    transition: transform .3s ease-in-out;
     background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
   }
 

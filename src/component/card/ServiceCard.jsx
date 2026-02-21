@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const ServiceCard = ({ service }) => {
   const {
-    id,
+    _id,
     title,
     shortDescription,
     priceFrom,
@@ -19,8 +19,8 @@ const ServiceCard = ({ service }) => {
        <Image
         src={image}
         alt={title}
-        height={48}
-        width={100}
+        height={400}
+        width={400}
         className="w-full h-48 object-cover mb-4"
       />
 
@@ -49,7 +49,7 @@ const ServiceCard = ({ service }) => {
         </div>
 
         {/* Button */}
-        <Link href={`/services/${id}`}>
+        <Link href={`/services/${_id}`}>
           <button className="w-full mt-3 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition">
             View Details
           </button>

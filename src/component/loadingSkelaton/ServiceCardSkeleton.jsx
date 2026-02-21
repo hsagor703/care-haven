@@ -1,5 +1,6 @@
 const ServiceCardSkeleton = () => {
   return (
+    
     <div className="bg-white rounded-2xl shadow-md overflow-hidden animate-pulse">
       {/* Image skeleton */}
       <div className="h-44 bg-gray-200" />

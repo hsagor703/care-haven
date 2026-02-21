@@ -1,6 +1,7 @@
 import { FaStar, FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import BookingBtn from "../buttons/BookingBtn";
 
 const ServiceDetails = ({ service }) => {
   if (!service) return null;
@@ -17,6 +18,8 @@ const ServiceDetails = ({ service }) => {
     trustAndSafety,
     booking,
   } = service;
+
+  console.log(service);
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
@@ -65,7 +68,7 @@ const ServiceDetails = ({ service }) => {
           Pricing
         </h2>
         <div className="grid sm:grid-cols-3 gap-4">
-          {pricing.packages.map((pkg, index) => (
+          {pricing?.packages.map((pkg, index) => (
             <div
               key={index}
               className="border border-green-500/25 rounded-xl p-4 text-center hover:border-green-500 transition"
@@ -131,11 +134,12 @@ const ServiceDetails = ({ service }) => {
 
       {/* CTA */}
       <div className="mt-10 text-center">
-        <Link href={booking?.redirect?.notLoggedIn}>
-          <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl text-lg font-semibold transition">
+        <BookingBtn service={service}></BookingBtn>
+        {/* <Link href={booking?.redirect?.notLoggedIn}> */}
+          {/* <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl text-lg font-semibold transition">
             {booking?.ctaText}
-          </button>
-        </Link>
+          </button> */}
+        {/* </Link> */}
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 [
   {
-    "id": "svc-001",
     "slug": "baby-sitting-service",
     "title": "Baby Sitting Service",
     "tagline": "Professional and trusted baby sitters at your home.",
@@ -82,7 +81,6 @@
   },
 
   {
-    "id": "svc-002",
     "slug": "elderly-care-service",
     "title": "Elderly Care Service",
     "tagline": "Compassionate and respectful care for elders.",
@@ -160,7 +158,6 @@
   },
 
   {
-    "id": "svc-003",
     "slug": "sick-patient-care",
     "title": "Sick Patient Care",
     "tagline": "Professional medical and non-medical care at home.",

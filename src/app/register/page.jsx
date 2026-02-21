@@ -4,6 +4,15 @@ import Button from "@/component/buttons/Button";
 import Link from "next/link";
 
 const RegisterPage = () => {
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const nidNo = e.target.nid.value;
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const contact = e.target.contact.value;
+    const password = e.target.password.value;
+    console.log({ nidNo, name, email, contact, password });
+  };
   return (
     <div className="min-h-screen flex items-center justify-center  px-4">
       <div className="card w-full max-w-2xl bg-color shadow-2xl">
@@ -12,7 +21,7 @@ const RegisterPage = () => {
             Register
           </h2>
 
-          <form className="space-y-4 mt-4">
+          <form onSubmit={handleRegister} className="space-y-4 mt-4">
             {/* GRID START */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* NID */}
@@ -21,7 +30,8 @@ const RegisterPage = () => {
                   <span className="label-text">NID No</span>
                 </label>
                 <input
-                  type="text"
+                  type="number"
+                  name="nid"
                   placeholder="Enter NID"
                   className="input input-bordered w-full focus:input-success"
                   required
@@ -35,6 +45,7 @@ const RegisterPage = () => {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Enter your name"
                   className="input input-bordered w-full focus:input-success"
                   required
@@ -48,6 +59,7 @@ const RegisterPage = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Enter email"
                   className="input input-bordered w-full focus:input-success"
                   required
@@ -62,6 +74,7 @@ const RegisterPage = () => {
                 <input
                   type="tel"
                   placeholder="Enter phone number"
+                  name="contact"
                   className="input input-bordered w-full focus:input-success"
                   required
                 />
@@ -75,6 +88,7 @@ const RegisterPage = () => {
               </label>
               <input
                 type="password"
+                name="password"
                 placeholder="Enter password"
                 className="input input-bordered w-full focus:input-success"
                 required

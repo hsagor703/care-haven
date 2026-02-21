@@ -1,6 +1,5 @@
 [
   {
-    "id": "svc-001",
     "title": "Baby Sitting Service",
     "category": "baby-care",
     "shortDescription": "Trusted care for your baby at home.",
@@ -13,7 +12,6 @@
     "isFeatured": true
   },
   {
-    "id": "svc-002",
     "title": "Elderly Care Service",
     "category": "elderly-care",
     "shortDescription": "Compassionate and respectful elderly care.",
@@ -26,7 +24,6 @@
     "isFeatured": false
   },
   {
-    "id": "svc-003",
     "title": "Sick Patient Care",
     "category": "sick-care",
     "shortDescription": "Professional care for patients at home.",

@@ -4,6 +4,12 @@ import Button from "@/component/buttons/Button";
 import Link from "next/link";
 
 const LoginPage = () => {
+  const handleLogin = (e) => {
+    e.preventDefault()
+    const email = e.target.email.value
+    const password = e.target.password.value
+    console.log({email, password});
+  }
   return (
     <div className="min-h-screen flex items-center justify-center  px-4">
       
@@ -14,7 +20,7 @@ const LoginPage = () => {
             Login
           </h2>
 
-          <form className="space-y-4 mt-4">
+          <form onSubmit={handleLogin} className="space-y-4 mt-4">
 
             {/* Email */}
             <div>
@@ -23,6 +29,7 @@ const LoginPage = () => {
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="Enter your email"
                 className="input input-bordered w-full focus:input-success"
                 required
@@ -36,6 +43,7 @@ const LoginPage = () => {
               </label>
               <input
                 type="password"
+                name="password"
                 placeholder="Enter password"
                 className="input input-bordered w-full focus:input-success"
                 required
