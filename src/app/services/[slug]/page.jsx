@@ -7,7 +7,9 @@ const ServiceDetails = async ({ params }) => {
   const service = await getSingleService(slug);
   return (
     <div>
-      <ServiceDetailsPage service={service}></ServiceDetailsPage>
+      <ServiceDetailsPage
+        service={JSON.parse(JSON.stringify(service))}
+      ></ServiceDetailsPage>
     </div>
   );
 };

@@ -17,9 +17,7 @@ const ServiceDetails = ({ service }) => {
     caregiver,
     trustAndSafety,
     booking,
-  } = service;
-
-  console.log(service);
+  } = service || {};
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">

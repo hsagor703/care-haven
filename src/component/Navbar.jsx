@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
 import Logo from "./Logo";
 import Button from "./buttons/Button";
 import Link from "next/link";
 import NavLink from "./buttons/NavLink";
+import { signOut, useSession } from "next-auth/react";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const session = useSession();
+  const handleLogout = () => {
+    signOut();
+    Swal.fire("Success", "Logout Successful", "success");
+  };
   const links = (
     <>
       <li>
@@ -13,18 +21,14 @@ const Navbar = () => {
       <li>
         <NavLink href={"/services"}>Services</NavLink>
       </li>
-      {/* <li>
-        <NavLink href={'/baby-care'}>Baby Care </NavLink>
-      </li>
-      <li>
-        <NavLink href={'/elderly-service'}>Elderly Service</NavLink>
-      </li>
-      <li>
-        <NavLink href={'/sick-people-service'}>Sick People Service</NavLink>
-      </li> */}
       <li>
         <NavLink href={"/about"}>About</NavLink>
       </li>
+      {session?.data && (
+        <li>
+          <NavLink href={"/dashboard"}>Dashboard</NavLink>
+        </li>
+      )}
     </>
   );
   return (
@@ -62,12 +66,22 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end space-x-1.5">
-          <Link href={"/login"}>
-            <Button>{"Login"}</Button>
-          </Link>
-          <Link href={"/register"}>
-            <Button>{"Register"}</Button>
-          </Link>
+          {session.status === "loading" ? (
+            <span className="text-center loading loading-spinner text-success"></span>
+          ) : session.status === "authenticated" ? (
+            <>
+              <Button onclick={handleLogout}>{"LogOut"}</Button>
+            </>
+          ) : (
+            <>
+              <Link href={"/login"}>
+                <Button>{"Login"}</Button>
+              </Link>
+              <Link href={"/register"}>
+                <Button>{"Register"}</Button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>

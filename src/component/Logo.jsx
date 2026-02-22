@@ -7,11 +7,11 @@ const Logo = () => {
     <div>
       <Link href={"/"} className="flex items-center gap-1">
         <Image
-          className=""
+          className="h-16 w-16"
           alt="care haven"
           src={"/assets/logo.png"}
-          width={50}
-          height={80}
+          width={400}
+          height={400}
         />
         <h2 className="font-bold text-xl linear-text">
           Care Haven

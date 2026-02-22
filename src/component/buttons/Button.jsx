@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+// import { signOut } from "next-auth/react";
 
-const Button = ({children}) => {
+const Button = ({children,onclick}) => {
   return (
     <StyledWrapper>
-      <button className='w-full'> {children}
+      <button onClick={onclick} className='w-full'> {children}
       </button>
     </StyledWrapper>
   );

@@ -1,17 +1,34 @@
 "use client";
 
+import registerUser from "@/action/server/auth";
 import Button from "@/component/buttons/Button";
+import GoogleLogin from "@/component/buttons/GoogleLogin";
+import { signIn } from "next-auth/react";
 import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const RegisterPage = () => {
-  const handleRegister = (e) => {
+  const router = useRouter();
+  const params = useSearchParams();
+  const callBackUrl = params.get("callbackUrl") || "/";
+  const handleRegister = async (e) => {
     e.preventDefault();
     const nidNo = e.target.nid.value;
     const name = e.target.name.value;
     const email = e.target.email.value;
     const contact = e.target.contact.value;
     const password = e.target.password.value;
-    console.log({ nidNo, name, email, contact, password });
+    const registerData = { nidNo, name, email, contact, password };
+    const result = await registerUser(registerData);
+    if (result.acknowledged) {
+      // router.push("/login");
+      const result = await signIn("credentials", {
+        email,
+        password,
+        callbackUrl: callBackUrl,
+      });
+      alert("registration successful ");
+    }
   };
   return (
     <div className="min-h-screen flex items-center justify-center  px-4">
@@ -98,7 +115,7 @@ const RegisterPage = () => {
             {/* BUTTON */}
             <Button>{"Register"}</Button>
           </form>
-
+          <GoogleLogin />
           <p className="text-center mt-4">
             Already have an account?{" "}
             <Link href="/login" className="text-emerald-700 font-semibold">
