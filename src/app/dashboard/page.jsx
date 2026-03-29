@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Dashboard = () => {
-    return (
-        <div>
-            this is dashboard layout
-        </div>
-    );
+  return (
+    <section className="py-24 ">
+      <div className="max-w-7xl mx-auto px-6">
+        this is dashboard
+      </div>
+    </section>
+  );
 };
 
 export default Dashboard;

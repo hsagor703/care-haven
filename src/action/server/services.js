@@ -15,3 +15,13 @@ export const getSingleService = async (id) => {
   const service = await dbConnect(collections.SERVICE_DETAILS).findOne(query);
   return service || {};
 };
+
+export const getSingleBooking = async (id) => {
+  if (id.length !== 24) {
+    return {};
+  }
+  const query = { _id: new ObjectId(id) };
+  // const query = { slug: id };
+  const service = await dbConnect(collections.SERVICE_DETAILS).findOne(query);
+  return service || {};
+};

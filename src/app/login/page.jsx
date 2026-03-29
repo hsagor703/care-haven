@@ -24,7 +24,8 @@ const LoginPage = () => {
       callbackUrl: params.get("callbackUrl") || "/",
     });
 
-    console.log(res);
+    console.log(params.get("callbackUrl") || "/");
+    console.log("res from login", res);
     if (!res.ok) {
       Swal.fire("Error", "Email and Password is wrong", "error");
     } else {
@@ -75,7 +76,10 @@ const LoginPage = () => {
           <GoogleLogin />
           <p className="text-center mt-4">
             Don't have an account?
-            <Link href={`/register?callbackUrl=${params.get("callbackUrl") || "/"}`} className="text-emerald-700 font-semibold">
+            <Link
+              href={`/register?callbackUrl=${params.get("callbackUrl") || "/"}`}
+              className="text-emerald-700 font-semibold"
+            >
               Register
             </Link>
           </p>

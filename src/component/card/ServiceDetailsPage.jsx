@@ -88,7 +88,7 @@ const ServiceDetails = ({ service }) => {
           What’s Included
         </h2>
         <ul className="grid sm:grid-cols-2 gap-3">
-          {whatsIncluded.map((item, index) => (
+          {whatsIncluded?.map((item, index) => (
             <li
               key={index}
               className="flex items-center gap-2 text-gray-600"
@@ -119,7 +119,7 @@ const ServiceDetails = ({ service }) => {
           Trust & Safety
         </h2>
         <div className="flex flex-wrap gap-3">
-          {trustAndSafety.badges.map((badge, index) => (
+          {trustAndSafety?.badges.map((badge, index) => (
             <span
               key={index}
               className="bg-green-100/5 text-green-500 px-3 py-1 rounded-full text-sm"

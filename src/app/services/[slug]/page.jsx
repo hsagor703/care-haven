@@ -5,6 +5,7 @@ import React from "react";
 const ServiceDetails = async ({ params }) => {
   const { slug } = await params;
   const service = await getSingleService(slug);
+  
   return (
     <div>
       <ServiceDetailsPage

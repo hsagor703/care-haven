@@ -1,17 +1,20 @@
-// "use client";
-import { signIn } from "next-auth/react";
+"use client";
+import { signIn, useSession } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
 import React from "react";
 import Swal from "sweetalert2";
 
 const GoogleLogin = () => {
   const params = useSearchParams();
-  console.log(params.get("callbackUrl") || "/");
+  const session = useSession()
+  const callbackUrl = params.get("callbackUrl") || "/";
+  console.log({callbackUrl, session, params});
   const handleGoogleLogin = async () => {
     const result = await signIn("google", {
+      redirect:false,
       callbackUrl: params.get("callbackUrl") || "/",
     });
-    console.log(result);
+    console.log("result from google login", result);
     if (result.ok) {
       Swal.fire("Success", "Google Login successful", "success");
     } else {

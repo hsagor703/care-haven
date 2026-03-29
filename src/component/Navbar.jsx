@@ -9,6 +9,7 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
   const session = useSession();
+  console.log("from navbar", session);
   const handleLogout = () => {
     signOut();
     Swal.fire("Success", "Logout Successful", "success");
@@ -24,10 +25,19 @@ const Navbar = () => {
       <li>
         <NavLink href={"/about"}>About</NavLink>
       </li>
-      {session?.data && (
-        <li>
-          <NavLink href={"/dashboard"}>Dashboard</NavLink>
-        </li>
+      {session.status === "loading" ? (
+        <span className="text-center loading loading-spinner text-success"></span>
+      ) : (
+        session?.data &&(
+          <>
+            {/* <li>
+            <NavLink href={"/booking"}>Booking</NavLink>
+          </li> */}
+            <li>
+              <NavLink href={"/dashboard"}>Dashboard</NavLink>
+            </li>
+          </>
+        )
       )}
     </>
   );
