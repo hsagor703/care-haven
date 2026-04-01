@@ -3,9 +3,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const NavLink = ({ href, children }) => {
+const DashboardNavLink = ({ href, children }) => {
   const path = usePathname();
-  const isActive = href === "/"  ? path === "/" : path.startsWith(href);
+  const isActive =  href==="/dashboard" ? path === "/dashboard" : path.startsWith(href);
   return (
     <Link href={href} className={`${isActive && "text-green-400 border-2 rounded-md"} font-bold`}>
       {children}
@@ -13,4 +13,4 @@ const NavLink = ({ href, children }) => {
   );
 };
 
-export default NavLink;
+export default DashboardNavLink;

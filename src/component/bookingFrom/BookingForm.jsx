@@ -1,5 +1,7 @@
 "use client";
 
+import bookingService from "@/action/server/bookingService";
+import { useSession } from "next-auth/react";
 import { useState } from "react";
 import Swal from "sweetalert2";
 
@@ -7,9 +9,9 @@ export default function BookingForm({
   formateServiceArea,
   formateServiceDetails,
 }) {
-  console.log(formateServiceDetails);
   const [selectRegion, setSelectRegion] = useState("");
   const [selectDistrict, setSelectDistrict] = useState("");
+  const session = useSession();
   const packageItem = formateServiceDetails?.pricing?.packages;
   console.log(packageItem);
   const perHour = packageItem[0]?.price;
@@ -17,13 +19,15 @@ export default function BookingForm({
   const perMonth = packageItem[2]?.price;
   console.log(perHour, perDay, perMonth);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const durationType = e.target.type.value;
     const value = Number(e.target.value.value);
     const region = e.target.region.value;
     const district = e.target.district.value;
     const address = e.target.address.value;
+    const date = new Date();
+    const formateDate = date.toDateString();
 
     let totalHourlyCost = null;
     let totalDailyCost = null;
@@ -44,6 +48,11 @@ export default function BookingForm({
       region,
       district,
       address,
+      servicePrice: {
+        perHour,
+        perDay,
+        perMonth,
+      },
       totalHourlyCost,
       totalDailyCost,
       totalMonthlyCost,
@@ -51,8 +60,18 @@ export default function BookingForm({
       serviceName: formateServiceDetails?.title,
       serviceTagLine: formateServiceDetails?.tagline,
       serviceCategory: formateServiceDetails?.category,
+      serviceImage: formateServiceDetails?.media?.thumbnail,
+      bookingDate: formateDate,
+      userName: session?.data?.user?.name,
+      userEmail: session?.data?.user?.email,
     };
     console.log(bookingData);
+    const result = await bookingService(bookingData);
+    console.log(result);
+    if (result?.insertedId) {
+      Swal.fire("success", "Booking Added Successfully", "success");
+      e.target.reset();
+    }
   };
 
   const duplicateRegion = formateServiceArea.map((r) => r.region);

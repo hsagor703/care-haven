@@ -25,3 +25,23 @@ export const getSingleBooking = async (id) => {
   const service = await dbConnect(collections.SERVICE_DETAILS).findOne(query);
   return service || {};
 };
+
+//get booking items 
+// get all booking 
+export const getAllBooking = async () => {
+  const allBooking = await dbConnect(collections.BOOKING_SERVICE).find().toArray()
+  return allBooking
+}
+
+// get single booking details 
+export const getSingleBookingDetails = async (id) => {
+  if (id.length !== 24) {
+    return {};
+  }
+  const query = { _id: new ObjectId(id) };
+  // const query = { slug: id };
+  const service = await dbConnect(collections.BOOKING_SERVICE).findOne(query);
+  return service || {};
+};
+
+

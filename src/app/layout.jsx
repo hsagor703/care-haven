@@ -26,7 +26,8 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-br from-[#050505] via-[#0b1220] to-black`}
         >
-          <header className="pb-18">
+          {children}
+          {/* <header className="pb-18">
             <Navbar />
           </header>
           <main className="min-h-[calc(100vh-292px)] container mx-auto">
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
           </main>
           <footer>
             <Footer />
-          </footer>
+          </footer> */}
         </body>
       </html>
     </NextAuthProvider>

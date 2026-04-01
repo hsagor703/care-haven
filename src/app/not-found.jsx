@@ -6,7 +6,7 @@ const NotFound = ({
   message = "Sorry, the service you are looking for does not exist or has been removed.",
 }) => {
   return (
-    <section className="min-h-[60vh] flex items-center justify-center px-4">
+    <section className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center max-w-md">
         {/* Icon */}
         <div className="flex justify-center mb-4">
