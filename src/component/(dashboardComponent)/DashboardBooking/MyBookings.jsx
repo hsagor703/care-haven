@@ -24,7 +24,7 @@ export default function MyBookings({ bookings }) {
           {bookings.map((booking) => (
             <div
               key={booking._id}
-              className="border p-6 rounded-2xl shadow hover:shadow-lg transition"
+              className="border-green-500 border-2 p-6 rounded-2xl shadow hover:shadow-lg transition"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 

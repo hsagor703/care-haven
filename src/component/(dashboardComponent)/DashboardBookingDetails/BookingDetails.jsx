@@ -21,7 +21,7 @@ export default function BookingDetails({ bookingDetails }) {
   return (
     <section className="max-w-5xl mx-auto px-4 py-10 space-y-8">
       {/* Header */}
-      <div className="border p-6 rounded-2xl shadow flex justify-between items-center">
+      <div className="border-green-500 border-2 p-6 rounded-2xl shadow flex justify-between items-center">
         <div>
           <h1 className="text-2xl font-bold text-gray-500">
             {bookingDetails.serviceName}
@@ -41,7 +41,7 @@ export default function BookingDetails({ bookingDetails }) {
       {/* Info Grid */}
       <div className="grid md:grid-cols-2 gap-6">
         {/* Left */}
-        <div className="border p-6 rounded-2xl shadow space-y-4">
+        <div className="border-green-500 border-2 p-6 rounded-2xl shadow space-y-4">
           <h2 className="text-lg font-semibold">bookingDetails Info</h2>
 
           <p className="flex items-center gap-2 text-gray-600">
@@ -62,7 +62,7 @@ export default function BookingDetails({ bookingDetails }) {
         </div>
 
         {/* Right */}
-        <div className="border p-6 rounded-2xl shadow space-y-4">
+        <div className="border-green-500 border-2 p-6 rounded-2xl shadow space-y-4">
           <h2 className="text-lg font-semibold">Payment Summary</h2>
 
           <div className="flex justify-between text-gray-600">
@@ -99,7 +99,7 @@ export default function BookingDetails({ bookingDetails }) {
             )}
           </div>
 
-          <hr />
+          <hr className="border-green-500 border-2" />
 
           <div className="flex justify-between font-bold text-green-600 text-lg">
             <span>Total</span>

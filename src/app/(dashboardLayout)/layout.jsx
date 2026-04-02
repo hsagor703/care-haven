@@ -13,16 +13,15 @@ const DashboardLayout = ({ children }) => {
     if (session?.status === "unauthenticated") {
       router.push(`/login?callbackUrl=${path}`);
     }
+    // if (session?.status === "authenticated") {
+    //   router.push("/dashboard");
+    // }
   }, [path, router, session.status]);
 
   if (session?.status === "loading") {
     return (
-      <span className="text-center loading loading-spinner text-success"></span>
+      <span className="text-center flex items-center justify-center mx-auto h-screen loading loading-spinner text-success"></span>
     );
-  }
-
-  if (session?.status === "authenticated") {
-    return router.push("/dashboard");
   }
 
   return (
