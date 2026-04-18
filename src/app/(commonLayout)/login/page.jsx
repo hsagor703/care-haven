@@ -1,8 +1,8 @@
 "use client"
-import LoginContent from '@/component/Logincontent';
+import LoginContent from '@/component/LoginContent';
 import React, { Suspense } from 'react';
 
-const page = () => {
+const LoginPage = () => {
   return (
     <Suspense fallback={<div>loading...</div>}>
       <LoginContent/>
