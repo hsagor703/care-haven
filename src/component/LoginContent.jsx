@@ -5,7 +5,6 @@ import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import GoogleLogin from "@/component/buttons/GoogleLogin";
-import { Suspense } from "react";
 const LoginContent = () => {
   const router = useRouter();
   const params = useSearchParams();
@@ -35,7 +34,6 @@ const LoginContent = () => {
     }
   };
   return (
-    <Suspense fallback={<div>Loading...</div>}>
       <div className="min-h-screen flex items-center justify-center  px-4">
         <div className="card w-full max-w-md bg-color shadow-2xl">
           <div className="card-body">
@@ -89,7 +87,6 @@ const LoginContent = () => {
           </div>
         </div>
       </div>
-    </Suspense>
   );
 };
 
