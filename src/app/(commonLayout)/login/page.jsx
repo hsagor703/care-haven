@@ -10,4 +10,4 @@ const LoginPage = () => {
   );
 };
 
-export default page;
+export default LoginPage;
