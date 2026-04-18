@@ -16,6 +16,7 @@ const Logo = () => {
         <h2 className="font-bold text-xl linear-text">
           Care Haven
         </h2>
+
       </Link>
     </div>
   );
