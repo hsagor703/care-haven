@@ -28,7 +28,7 @@ const Navbar = () => {
       {session.status === "loading" ? (
         <span className="text-center loading loading-spinner text-success"></span>
       ) : (
-        session?.data &&(
+        session?.data && (
           <>
             {/* <li>
             <NavLink href={"/booking"}>Booking</NavLink>
@@ -41,6 +41,7 @@ const Navbar = () => {
       )}
     </>
   );
+  if (session?.status === "loading") return null;
   return (
     <div>
       <div className="navbar bg-black/50 backdrop-blur-md shadow-sm pl-0 fixed z-10">
