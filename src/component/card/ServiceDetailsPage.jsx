@@ -52,7 +52,7 @@ const ServiceDetails = ({ service }) => {
 
       {/* Description */}
       <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-2">
+        <h2 className="text-xl text-white font-semibold mb-2">
           Service Overview
         </h2>
         <p className="text-gray-600 leading-relaxed">
@@ -62,7 +62,7 @@ const ServiceDetails = ({ service }) => {
 
       {/* Pricing */}
       <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="text-xl text-white font-semibold mb-4">
           Pricing
         </h2>
         <div className="grid sm:grid-cols-3 gap-4">
@@ -84,7 +84,7 @@ const ServiceDetails = ({ service }) => {
 
       {/* What's Included */}
       <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-3">
+        <h2 className="text-xl text-white font-semibold mb-3">
           What’s Included
         </h2>
         <ul className="grid sm:grid-cols-2 gap-3">
@@ -102,7 +102,7 @@ const ServiceDetails = ({ service }) => {
 
       {/* Caregiver Info */}
       <div className="mt-8 bg-gray-50/5 rounded-xl p-5">
-        <h2 className="text-xl font-semibold mb-3">
+        <h2 className="text-xl text-white font-semibold mb-3">
           Caregiver Information
         </h2>
         <ul className="space-y-2 text-gray-600">
@@ -115,7 +115,7 @@ const ServiceDetails = ({ service }) => {
 
       {/* Trust Badges */}
       <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-3">
+        <h2 className="text-xl text-white font-semibold mb-3">
           Trust & Safety
         </h2>
         <div className="flex flex-wrap gap-3">
