@@ -51,7 +51,7 @@ const LoginContent = () => {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered bg-[#1D232A] w-full focus:input-success"
+                  className="input input-bordered text-gray-400 bg-[#1D232A] w-full focus:input-success"
                   required
                 />
               </div>
@@ -65,7 +65,7 @@ const LoginContent = () => {
                   type="password"
                   name="password"
                   placeholder="Enter password"
-                  className="input bg-[#1D232A] input-bordered w-full focus:input-success"
+                  className="input text-gray-400 bg-[#1D232A] input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -75,7 +75,7 @@ const LoginContent = () => {
             </form>
             {/* google btn */}
             <GoogleLogin />
-            <p className="text-center mt-4">
+            <p className="text-center mt-4 text-white">
               Don't have an account?
               <Link
                 href={`/register?callbackUrl=${params.get("callbackUrl") || "/"}`}

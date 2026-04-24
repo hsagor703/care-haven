@@ -100,7 +100,7 @@ export default function BookingForm({
                 name="type"
                 defaultValue="Pick a Type"
                 required
-                className="select w-full select-success"
+                className="select bg-[#1D232A] w-full select-success"
               >
                 <option disabled={true}>Pick a Type</option>
                 <option value="hour">Hour</option>
