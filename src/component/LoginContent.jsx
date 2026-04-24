@@ -51,7 +51,7 @@ const LoginContent = () => {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered w-full focus:input-success"
+                  className="input input-bordered bg-[#1D232A] w-full focus:input-success"
                   required
                 />
               </div>
@@ -65,7 +65,7 @@ const LoginContent = () => {
                   type="password"
                   name="password"
                   placeholder="Enter password"
-                  className="input input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] input-bordered w-full focus:input-success"
                   required
                 />
               </div>

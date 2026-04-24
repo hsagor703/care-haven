@@ -50,7 +50,7 @@ const RegisterContent = () => {
                   type="number"
                   name="nid"
                   placeholder="Enter NID"
-                  className="input input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -64,7 +64,7 @@ const RegisterContent = () => {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="input input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -78,7 +78,7 @@ const RegisterContent = () => {
                   type="email"
                   name="email"
                   placeholder="Enter email"
-                  className="input input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -92,7 +92,7 @@ const RegisterContent = () => {
                   type="tel"
                   placeholder="Enter phone number"
                   name="contact"
-                  className="input input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -107,7 +107,7 @@ const RegisterContent = () => {
                 type="password"
                 name="password"
                 placeholder="Enter password"
-                className="input input-bordered w-full focus:input-success"
+                className="input bg-[#1D232A] input-bordered w-full focus:input-success"
                 required
               />
             </div>

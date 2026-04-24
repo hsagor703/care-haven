@@ -95,7 +95,7 @@ export default function BookingForm({
           <label className="block mb-2 font-medium">Select Duration</label>
 
           <div className="grid grid-cols-2 gap-4">
-            <fieldset className="fieldset">
+            <fieldset className="fieldset bg-[#1D232A]">
               <select
                 name="type"
                 defaultValue="Pick a Type"
