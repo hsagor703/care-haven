@@ -45,13 +45,13 @@ const LoginContent = () => {
               {/* Email */}
               <div>
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-gray-400">Email</span>
                 </label>
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered text-gray-400 bg-[#1D232A] w-full focus:input-success"
+                  className="input input-bordered border border-gray-600 text-gray-400 bg-[#1D232A] w-full focus:input-success"
                   required
                 />
               </div>
@@ -59,13 +59,13 @@ const LoginContent = () => {
               {/* Password */}
               <div>
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-gray-400">Password</span>
                 </label>
                 <input
                   type="password"
                   name="password"
                   placeholder="Enter password"
-                  className="input text-gray-400 bg-[#1D232A] input-bordered w-full focus:input-success"
+                  className="input text-gray-400 border border-gray-600 bg-[#1D232A] input-bordered w-full focus:input-success"
                   required
                 />
               </div>

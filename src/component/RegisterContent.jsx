@@ -44,13 +44,13 @@ const RegisterContent = () => {
               {/* NID */}
               <div>
                 <label className="label">
-                  <span className="label-text">NID No</span>
+                  <span className="label-text text-gray-400">NID No</span>
                 </label>
                 <input
                   type="number"
                   name="nid"
                   placeholder="Enter NID"
-                  className="input bg-[#1D232A] text-gray-400 input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] text-gray-400 border border-gray-600 input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -58,13 +58,13 @@ const RegisterContent = () => {
               {/* Name */}
               <div>
                 <label className="label">
-                  <span className="label-text">Full Name</span>
+                  <span className="label-text text-gray-400">Full Name</span>
                 </label>
                 <input
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="input bg-[#1D232A] text-gray-400 input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] text-gray-400 border border-gray-600 input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -72,13 +72,13 @@ const RegisterContent = () => {
               {/* Email */}
               <div>
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-gray-400">Email</span>
                 </label>
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter email"
-                  className="input bg-[#1D232A] text-gray-400 input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] border border-gray-600 text-gray-400 input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -86,13 +86,13 @@ const RegisterContent = () => {
               {/* Contact */}
               <div>
                 <label className="label">
-                  <span className="label-text">Contact</span>
+                  <span className="label-text text-gray-400">Contact</span>
                 </label>
                 <input
                   type="tel"
                   placeholder="Enter phone number"
                   name="contact"
-                  className="input bg-[#1D232A] text-gray-400 input-bordered w-full focus:input-success"
+                  className="input bg-[#1D232A] text-gray-400 border border-gray-600 input-bordered w-full focus:input-success"
                   required
                 />
               </div>
@@ -101,13 +101,13 @@ const RegisterContent = () => {
             {/* PASSWORD FULL WIDTH */}
             <div>
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text text-gray-400">Password</span>
               </label>
               <input
                 type="password"
                 name="password"
                 placeholder="Enter password"
-                className="input bg-[#1D232A] text-gray-400 input-bordered w-full focus:input-success"
+                className="input bg-[#1D232A] border border-gray-600 text-gray-400 input-bordered w-full focus:input-success"
                 required
               />
             </div>
