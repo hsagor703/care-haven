@@ -46,10 +46,10 @@ const Navbar = () => {
   // if (session?.status === "loading") return null;
   return (
     <div>
-      <div className="navbar bg-black/50 backdrop-blur-md shadow-sm pl-0 fixed z-10">
+      <div className="navbar bg-black/50 backdrop-blur-md shadow-sm pl-4 md:pl-0 fixed z-10">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn lg:hidden ">
+          <div className="dropdown mr-2 md:mr-0">
+            <div tabIndex={0} role="button" className=" lg:hidden ">
               <RiMenu2Line color="#00A63E" size={25}/>
             </div>
             <ul
