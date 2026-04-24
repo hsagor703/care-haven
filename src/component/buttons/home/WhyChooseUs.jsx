@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold text-white">
             Why Choose
             <span className="linear-text"> Care Haven</span>
           </h2>

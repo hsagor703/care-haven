@@ -6,6 +6,7 @@ import Link from "next/link";
 import NavLink from "./buttons/NavLink";
 import { signOut, useSession } from "next-auth/react";
 import Swal from "sweetalert2";
+import { TbLogin, TbLogin2 } from "react-icons/tb";
 
 const Navbar = () => {
   const session = useSession();
@@ -47,7 +48,7 @@ const Navbar = () => {
       <div className="navbar bg-black/50 backdrop-blur-md shadow-sm pl-0 fixed z-10">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn text-white lg:hidden ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -76,7 +77,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end space-x-1.5">
+        <div className="navbar-end space-x-1.5 ">
           {session.status === "loading" ? (
             <span className="text-center loading loading-spinner text-success"></span>
           ) : session.status === "authenticated" ? (
@@ -85,12 +86,20 @@ const Navbar = () => {
             </>
           ) : (
             <>
+
+            <div className="hidden md:flex gap-2 ">
               <Link href={"/login"}>
                 <Button>{"Login"}</Button>
               </Link>
               <Link href={"/register"}>
                 <Button>{"Register"}</Button>
               </Link>
+            </div>
+
+            <div className="md:hidden flex justify-center items-center">
+              <Link href={"/login"}> <TbLogin2 color="#00A63E" size={40}/> </Link>
+              <Link href={"/register"}> <TbLogin color="#ff0000" size={40}/> </Link>
+            </div>
             </>
           )}
         </div>

@@ -39,7 +39,7 @@ const ServicesSection = () => {
 
         {/* SECTION HEADER */}
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold text-white">
             Our <span className="linear-text"> Care Haven</span> Services
           </h2>
           <p className="mt-4 text-slate-600 text-lg">
