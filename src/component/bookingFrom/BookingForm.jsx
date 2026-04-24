@@ -92,7 +92,7 @@ export default function BookingForm({
       <form onSubmit={handleSubmit}>
         {/* Duration */}
         <div className="mb-6">
-          <label className="block mb-2 font-medium">Select Duration</label>
+          <label className="block mb-2 font-medium text-white">Select Duration</label>
 
           <div className="grid grid-cols-2 gap-4">
             <fieldset className="fieldset ">
@@ -100,7 +100,7 @@ export default function BookingForm({
                 name="type"
                 defaultValue="Pick a Type"
                 required
-                className="select bg-[#1D232A] w-full select-success"
+                className="select text-white border border-green-500 bg-[#1D232A] w-full select-success"
               >
                 <option disabled={true}>Pick a Type</option>
                 <option value="hour">Hour</option>
@@ -113,7 +113,7 @@ export default function BookingForm({
               <input
                 required
                 placeholder="Enter Your Value"
-                className="select w-full select-success bg-[#1D232A] border border-gray-600"
+                className="select w-full text-white select-success bg-[#1D232A] border border-green-500"
                 type="number"
                 name="value"
               ></input>
@@ -124,7 +124,7 @@ export default function BookingForm({
         {/* Location Section */}
 
         <div className="mb-6">
-          <label className="block mb-2 font-medium">Select Location</label>
+          <label className="block mb-2 font-medium text-white">Select Location</label>
 
           <div className="grid grid-cols-2 gap-4">
             {/* Region */}
@@ -136,7 +136,7 @@ export default function BookingForm({
                   setSelectRegion(e.target.value);
                   setSelectDistrict(""); // region change হলে district reset
                 }}
-                className="select w-full select-success bg-[#1D232A] border border-gray-600"
+                className="select w-full select-success border border-green-500 text-white bg-[#1D232A] "
               >
                 <option value="" disabled>
                   Pick a Region
@@ -157,7 +157,7 @@ export default function BookingForm({
                 onChange={(e) => setSelectDistrict(e.target.value)}
                 disabled={!selectRegion}
                 name="district"
-                className="select w-full select-success bg-[#1D232A] border border-gray-600"
+                className="select w-full text-white select-success bg-[#1D232A] border border-green-500"
               >
                 <option value="" disabled>
                   Pick a District
@@ -175,13 +175,13 @@ export default function BookingForm({
 
         {/* Address */}
         <div className="mb-6">
-          <label className="block mb-2 font-medium">Detailed Address</label>
+          <label className="block mb-2 font-medium text-white">Detailed Address</label>
           <textarea
             required
             name="address"
             rows="3"
             placeholder="House no, Road no, Landmark..."
-            className="textarea textarea-success bg-[#1D232A]  border-gray-600 w-full border p-3 rounded-lg"
+            className="textarea textarea-success bg-[#1D232A] w-full border border-green-500 p-3 text-white rounded-lg"
           />
         </div>
 
